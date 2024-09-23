@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile Form</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .container-table td, .container-table th {
+            padding: 10px;
+            background-color: #F5EDED;
+            border: none;
+        }
+
+        .button, .view-home-button{
+            background-color: #FFF;
+            color: black;
+            padding: 10px 20px;
+            font-family: Georgia;
+            font-size: 16px;
+            margin: 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button:hover , .view-home-button:hover{
+            background-color: #FFEFEF;
+        }
+
+        .footer-row {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+    </style>
+	<script>
+			function viewHome() {
+				// Redirect to homepage
+				event.preventDefault();
+				window.location.href = 'index.html';
+			}
+	</script>
+</head>
+
+<body style="font-family: Georgia; background-color: #F7B5CA;">
+
+    <!-- Header Section -->
+    <header>
+        <img src="header.jpg" style="width: 100%; height: 200px;" alt="Header Image">
+    </header>
+
+    <!-- Main Table Layout for Profile Form -->
+    <form action="#" method="post">
+        <table class="container-table" width="100%" align="center">
+            <tr>
+                <!-- Left Column: Introduction, Education, Experience, Expertise -->
+                <td style="width: 65%; vertical-align: top;">
+                    <table width="100%">
+                        <!-- Introduction Section -->
+                        <tr>
+                            <th style="background-color: #F7B5CA; color: #fff; text-align: center;">INTRODUCTION</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="introduction" rows="4" cols="50" placeholder="Introduce yourself..."></textarea>
+                            </td>
+                        </tr>
+                        
+                        <!-- Education Section -->
+                        <tr>
+                            <th style="background-color: #F7B5CA; color: #fff; text-align: center;">EDUCATION</th>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <table width="100%">
+                                    <tr>
+                                        <td><input type="text" name="edu_year_1" placeholder="Year"></td>
+                                        <td><input type="text" name="edu_school_1" placeholder="School & Level"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="edu_year_2" placeholder="Year"></td>
+                                        <td><input type="text" name="edu_school_2" placeholder="School & Level"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="edu_year_3" placeholder="Year"></td>
+                                        <td><input type="text" name="edu_school_3" placeholder="Scool & Level"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="edu_year_4" placeholder="Year"></td>
+                                        <td><input type="text" name="edu_school_4" placeholder="School & Level"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                        <!-- Experience Section -->
+                        <tr>
+                            <th colspan="2" style="background-color: #F7B5CA; color: #fff; text-align: center;">EXPERIENCE</th>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <table width="100%">
+                                    <tr>
+                                        <td><input type="text" name="exp_year_1" placeholder="Year"></td>
+                                        <td><input type="text" name="exp_detail_1" placeholder="Experience Details"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="exp_year_2" placeholder="Year"></td>
+                                        <td><input type="text" name="exp_detail_2" placeholder="Experience Details"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                        <!-- Expertise Section -->
+                        <tr>
+                            <th colspan="2" style="background-color: #F7B5CA; color: #fff; text-align: center;">EXPERTISE</th>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <table width="100%">
+                                    <tr>
+                                        <td><input type="text" name="expertise_1" placeholder="Skill"></td>
+                                        <td style="padding: 5px 100px;"><input type="text" name="expertise_extra_1" placeholder="Other Expertise"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="expertise_2" placeholder="Skill"></td>
+                                        <td style="padding: 5px 100px;"><input type="text" name="expertise_extra_2" placeholder="Other Expertise"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="expertise_3" placeholder="Skill"></td>
+                                        <td style="padding: 5px 100px;"><input type="text" name="expertise_extra_3" placeholder="Other Expertise"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+
+                <!-- Right Column: Contact Info, Social Media, Hobbies -->
+                <td style="width: 35%; vertical-align: top; background-color: #F7B5CA;">
+                    <table width="100%">
+                        <tr>
+                            <td style="text-align: center; background-color: #F7B5CA;">
+                                <!-- Profile Picture Section -->
+                                <label for="user_image">Profile Picture:</label><br>
+                                <input type="file" name="user_image" id="user_image" accept="image/*"><br><br>
+                                
+                                <!-- Name Input Section -->
+                                <label for="last-name" style="color: #FFF">Last Name:</label> 
+                                <input type="text" name="last-name" id="last-name" placeholder="Your Last Name"><br>
+								<label for="first-name" style="color: #FFF">First Name:</label>
+                                <input type="text" name="firsr-name" id="first-name" placeholder="Your First Name"><br><br><br><br>
+
+                                <!-- Contact Information Section -->
+                                <table width="100%" style = "background-color: #F7B5CA;">
+                                    <tr style = "background-color: #F7B5CA;">
+                                        <th style="background-color: #F5EDED; color: #000000">CONTACT</th>
+                                    </tr>
+                                    <tr>
+                                        <td style = "background-color: #F7B5CA; color: #fff">
+                                            <input type="email" name="email" placeholder="Email Address"><br>
+                                            <input type="tel" name="phone" placeholder="Phone Number"><br>
+                                            <input type="text" name="location" placeholder="Location">
+                                        </td>
+                                    </tr>
+
+                                    <!-- Social Media Links Section -->
+                                    <tr>
+                                        <th style="background-color: #F5EDED; color: #000000">SOCIAL MEDIA</th>
+                                    </tr>
+                                    <tr>
+                                        <td style = "background-color: #F7B5CA; color: #fff">
+                                            Facebook: <input type="text" name="facebook" placeholder="Facebook Profile Link"><br>
+                                            Youtube: <input type="text" name="youtube" placeholder="YouTube Profile Link">
+                                        </td>
+                                    </tr>
+
+                                    <!-- Hobbies Section -->
+                                    <tr>
+                                        <th style="background-color: #F5EDED; color: #000000">HOBBIES</th>
+                                    </tr>
+                                    <tr>
+                                        <td style = "background-color: #F7B5CA; color: #fff">
+                                            <table width="100%" style="text-align: center;">
+                                                <tr>
+                                                    <td style = "background-color: #F7B5CA;"><input type="checkbox" name="hobby_watch"> Watching</td>
+                                                    <td style = "background-color: #F7B5CA;"><input type="checkbox" name="hobby_read"> Reading</td>
+                                                    <td style = "background-color: #F7B5CA;"><input type="checkbox" name="hobby_write"> Writing</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style = "background-color: #F7B5CA;"><input type="checkbox" name="hobby_walk"> Walking</td>
+                                                    <td style = "background-color: #F7B5CA;"><input type="checkbox" name="hobby_eat"> Eating</td>
+                                                    <td style = "background-color: #F7B5CA;"><input type="checkbox" name="hobby_sleep"> Sleeping</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Footer Row with Submit Button -->
+        <div class="footer-row">
+            <button type="submit" class="button">Submit Profile</button>
+			<button class="view-home-button" onclick="viewHome()">View Homepage</button>
+        </div>
+    </form>
+</body>
+</html>

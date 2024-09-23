@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body {
+				background-color: #F5EDED;
+				color: #333333;
+				font-family: Georgia;
+				text-align: center;
+				padding: 50px;
+			}
+
+			.view-profile-button, .view-schedule-button, .adding-profile-button, .adding-schedule-button {
+				background-color: #F7B5CA; 
+				color: white;
+				padding: 15px 30px;
+				font-family: Georgia;
+				font-size: 16px;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+				margin: 10px;
+				transition: background-color 0.3s ease;
+			}
+
+			.view-profile-button:hover, .view-schedule-button:hover, .adding-profile-button:hover, .adding-schedule-button:hover {
+				background-color: #FC819E;
+			}
+		</style>
+
+		<script>
+			function viewProfile() {
+				// Redirect to the profile website
+				window.location.href = 'profile.html';
+			}
+			function viewSchedule() {
+				// Redirect to the schedule website
+				window.location.href = 'schedule.html';
+			}
+			function viewAddingProfile() {
+				// Redirect to the adding profile form
+				window.location.href = 'adding_profile_form.html';
+			}
+			function viewAddingSchedule() {
+				// Redirect to the adding schedule form
+				window.location.href = 'adding_schedule_form.html';
+			}
+		</script>
+	</head>
+	
+	<body>
+		<h2>HOMEPAGE</h2>
+		<button class="view-profile-button" onclick="viewProfile()">View My Profile</button>
+		<button class="view-schedule-button" onclick="viewSchedule()">View My Schedule</button>
+		<button class="adding-profile-button" onclick="viewAddingProfile()">Adding Profile Form</button>
+		<button class="adding-schedule-button" onclick="viewAddingSchedule()">Adding Schedule Form</button>
+	</body>
+</html>

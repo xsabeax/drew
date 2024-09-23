@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Class Schedule</title>
+    <style>
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border: 2px solid #000;
+            border-collapse: collapse;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        td, th {
+            border: 1px solid #000;
+            padding: 10px;
+            background-color: #FFF;
+        }
+
+        th {
+            background-color: #F7B5CA;
+            color: white;
+            font-size: 18px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #FFF;
+        }
+
+        .view-home-button, .view-profile-button {
+            background-color: #FFF;
+            color: BLACK;
+            padding: 10px 20px;
+			font-family: Georgia;
+            font-size: 16px;
+            margin: 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .view-home-button:hover, .view-profile-button:hover {
+            background-color: #F6F5F2;
+        }
+
+        .footer-row {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+	
+	<script>
+			function viewProfile() {
+				// Redirect to the profile website
+				window.location.href = 'profile.html';
+			}
+			function viewHome() {
+				// Redirect to homepage
+				window.location.href = 'index.html';
+			}
+		</script>
+</head>
+
+<body style="font-family: Georgia; background-color: #F7B5CA;">
+
+    <h1>CLASS SCHEDULE</h1>
+
+    <table>
+        <tr>
+            <th>TIME</th>
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+            <th>FRI</th>
+        </tr>
+        <tr>
+            <td>07:00 AM - 08:00 AM</td>
+            <td rowspan="3">IT 301<br><li>Exercise 1</li></td>
+            <td rowspan="2">IT 303<br><li>Activity 1</li></td>
+            <td rowspan="3">FL 301<br><li>Group Activity 1</li></td>
+            <td rowspan="3">VACANT</td>
+            <td rowspan="3">IT 303<br><li>Title Proposal</li></td>
+        </tr>
+        <tr>
+            <td>08:00 AM - 09:00 AM</td>
+        </tr>
+        <tr>
+            <td>09:00 AM - 10:00 AM</td>
+            <td rowspan="2">IT 304<br><li>Discussion</li></td>
+        </tr>
+        <tr>
+            <td>10:00 AM - 11:00 AM</td>
+            <td rowspan="3">IT 304<br><li>Lab Activity 1</li></td>
+            <td rowspan="4">VACANT</td>
+            <td rowspan="3">IT 302<br><li>Activity 1</li></td>
+            <td rowspan="10">VACANT</td>
+        </tr>
+        <tr>
+            <td>11:00 AM - 12:00 PM</td>
+            <td rowspan="2">IT 301<br><li>Discussion</li></td>
+        </tr>
+        <tr>
+            <td>12:00 PM - 01:00 PM</td>
+        </tr>
+        <tr>
+            <td>01:00 PM - 02:00 PM</td>
+            <td rowspan="4">VACANT</td>
+            <td rowspan="5">VACANT</td>
+            <td rowspan="5">VACANT</td>
+        </tr>
+        <tr>
+            <td>02:00 PM - 03:00 PM</td>
+            <td rowspan="3">IT 307<br><li>Quiz 1</li></td>
+        </tr>
+        <tr>
+            <td>03:00 PM - 04:00 PM</td>
+        </tr>
+        <tr>
+            <td>04:00 PM - 05:00 PM</td>
+        </tr>
+        <tr>
+            <td>05:00 PM - 06:00 PM</td>
+            <td rowspan="3">IT 305<br><li>Assignment 1</li></td>
+            <td rowspan="3">IT 306<br><li>Assignment 1</li></td>
+        </tr>
+        <tr>
+            <td>06:00 PM - 07:00 PM</td>
+            <td rowspan="2">IT 306<br><li>Assignment 1</li></td>
+            <td rowspan="2">IT 307<br><li>Discussion</li></td>
+        </tr>
+        <tr>
+            <td>07:00 PM - 08:00 PM</td>
+        </tr>
+    </table>
+
+    <!-- Footer row with buttons for homepage and profile-->
+    <div class="footer-row">
+        <button class="view-profile-button" onclick="viewProfile()">View My Profile</button>
+		<button class="view-home-button" onclick="viewHome()">View Homepage</button>
+    </div>
+
+</body>
+</html>
